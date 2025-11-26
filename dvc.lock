@@ -36,13 +36,13 @@ stages:
         - 224
         - 3
         INCLUDE_TOP: false
-        LEARNING_RATE: 0.01
+        LEARNING_RATE: 1e-05
         WEIGHTS: imagenet
     outs:
     - path: artifacts/prepare_base_model
       hash: md5
-      md5: c1d6bc8d929fd85de07c4ba021b98f76.dir
-      size: 118059248
+      md5: 77cd5d52a6ed5fd5da072a244a65e5ab.dir
+      size: 118059216
       nfiles: 2
   training:
     cmd: python src/cnnClassifier/pipeline/stage_03_model_training.py
@@ -54,8 +54,8 @@ stages:
       nfiles: 465
     - path: artifacts/prepare_base_model
       hash: md5
-      md5: c1d6bc8d929fd85de07c4ba021b98f76.dir
-      size: 118059248
+      md5: 77cd5d52a6ed5fd5da072a244a65e5ab.dir
+      size: 118059216
       nfiles: 2
     - path: config/config.yaml
       hash: md5
@@ -69,7 +69,7 @@ stages:
       params.yaml:
         AUGMENTATION: true
         BATCH_SIZE: 16
-        EPOCHS: 2
+        EPOCHS: 15
         IMAGE_SIZE:
         - 224
         - 224
@@ -77,8 +77,8 @@ stages:
     outs:
     - path: artifacts/training/model.h5
       hash: md5
-      md5: ceecca1bef14b9d601491cf8111d0484
-      size: 59340720
+      md5: 5a65c7d639177adfb833b97c489cfcd9
+      size: 111267648
   evaluation:
     cmd: python src/cnnClassifier/pipeline/stage_04_model_evaluation.py
     deps:
@@ -89,8 +89,8 @@ stages:
       nfiles: 465
     - path: artifacts/training/model.h5
       hash: md5
-      md5: ceecca1bef14b9d601491cf8111d0484
-      size: 59340720
+      md5: 5a65c7d639177adfb833b97c489cfcd9
+      size: 111267648
     - path: config/config.yaml
       hash: md5
       md5: 1f6e391010688dc22380c9999843d722
@@ -109,5 +109,5 @@ stages:
     outs:
     - path: scores.json
       hash: md5
-      md5: 2141f57e900c6984a2813ce560702796
-      size: 68
+      md5: 02b91fd45a29cd71072e7faa0823180d
+      size: 71

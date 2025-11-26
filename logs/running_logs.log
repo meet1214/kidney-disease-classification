@@ -192,3 +192,1323 @@ x==========x]
 [2025-11-23 20:16:53,031: INFO: _internal: 127.0.0.1 - - [23/Nov/2025 20:16:53] "POST /predict HTTP/1.1" 200 -]
 [2025-11-23 20:18:52,846: INFO: _internal: 127.0.0.1 - - [23/Nov/2025 20:18:52] "POST /predict HTTP/1.1" 200 -]
 [2025-11-23 20:19:36,785: INFO: _internal: 127.0.0.1 - - [23/Nov/2025 20:19:36] "POST /predict HTTP/1.1" 200 -]
+[2025-11-25 07:25:34,990: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-11-25 07:25:34,997: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-25 07:25:35,003: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-25 07:25:35,004: INFO: common: created directory at: artifacts]
+[2025-11-25 07:25:35,004: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-11-25 07:25:35,005: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-25 07:25:43,608: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-25 07:25:45,208: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-11-25 07:25:57,913: INFO: stage_02_prepare_base_model: *******************]
+[2025-11-25 07:25:57,913: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model started <<<<<<]
+[2025-11-25 07:25:57,921: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-25 07:25:57,926: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-25 07:25:57,927: INFO: common: created directory at: artifacts]
+[2025-11-25 07:25:57,927: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-11-25 07:25:59,331: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-11-25 07:25:59,956: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-11-25 07:26:11,731: INFO: stage_03_model_training: *******************]
+[2025-11-25 07:26:11,732: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<]
+[2025-11-25 07:26:11,739: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-25 07:26:11,745: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-25 07:26:11,746: INFO: common: created directory at: artifacts]
+[2025-11-25 07:26:11,746: INFO: common: created directory at: artifacts/training]
+[2025-11-25 07:32:24,499: INFO: stage_03_model_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-11-25 07:32:37,885: INFO: stage_04_model_evaluation: *******************]
+[2025-11-25 07:32:37,886: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-11-25 07:32:37,893: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-25 07:32:37,900: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-25 07:32:37,900: INFO: common: created directory at: artifacts]
+[2025-11-25 07:33:39,018: INFO: common: json file saved at: scores.json]
+[2025-11-25 07:33:39,019: INFO: common: json file saved at: scores.json]
+[2025-11-25 07:33:39,019: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-11-25 07:35:19,905: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.107:8080]
+[2025-11-25 07:35:19,905: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-11-25 07:35:39,816: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 07:35:39] "GET / HTTP/1.1" 200 -]
+[2025-11-25 07:35:40,874: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 07:35:40] "GET / HTTP/1.1" 200 -]
+[2025-11-25 07:36:41,833: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 07:36:41] "POST /predict HTTP/1.1" 200 -]
+[2025-11-25 07:43:26,116: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.107:8080]
+[2025-11-25 07:43:26,116: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-11-25 07:43:29,810: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 07:43:29] "GET / HTTP/1.1" 200 -]
+[2025-11-25 07:43:30,357: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 07:43:30] "GET / HTTP/1.1" 200 -]
+[2025-11-25 07:43:45,648: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 07:43:45] "POST /predict HTTP/1.1" 200 -]
+[2025-11-25 07:47:10,148: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.107:8080]
+[2025-11-25 07:47:10,149: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-11-25 07:47:13,080: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 07:47:13] "GET / HTTP/1.1" 200 -]
+[2025-11-25 07:47:13,363: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 07:47:13] "GET / HTTP/1.1" 200 -]
+[2025-11-25 07:47:28,976: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 07:47:28] "POST /predict HTTP/1.1" 200 -]
+[2025-11-25 08:44:18,046: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-11-25 08:44:18,048: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-25 08:44:18,050: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-25 08:44:18,050: INFO: common: created directory at: artifacts]
+[2025-11-25 08:44:18,050: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-11-25 08:44:18,051: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-25 08:44:18,055: ERROR: stage_01_data_ingestion: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f67cc1b0070>: Failed to resolve 'drive.google.com' ([Errno -3] Temporary failure in name resolution)"))]
+Traceback (most recent call last):
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/socket.py", line 930, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7f67cc1b0070>: Failed to resolve 'drive.google.com' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f67cc1b0070>: Failed to resolve 'drive.google.com' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "src/cnnClassifier/pipeline/stage_01_data_ingestion.py", line 25, in <module>
+    obj.main()
+  File "src/cnnClassifier/pipeline/stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "/home/meetpatel12_/Projects/6th Sem/Kidney Disease Classification Using MLflow and DVC/src/cnnClassifier/components/data_ingestion.py", line 33, in download_file
+    raise e
+  File "/home/meetpatel12_/Projects/6th Sem/Kidney Disease Classification Using MLflow and DVC/src/cnnClassifier/components/data_ingestion.py", line 28, in download_file
+    gdown.download(prefix+file_id,zip_download_dir)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/gdown/download.py", line 202, in download
+    res = sess.get(url, stream=True, verify=verify)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f67cc1b0070>: Failed to resolve 'drive.google.com' ([Errno -3] Temporary failure in name resolution)"))
+[2025-11-25 08:44:40,281: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-11-25 08:44:40,283: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-25 08:44:40,284: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-25 08:44:40,285: INFO: common: created directory at: artifacts]
+[2025-11-25 08:44:40,285: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-11-25 08:44:40,285: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-25 08:44:40,289: ERROR: stage_01_data_ingestion: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f7fde1a10a0>: Failed to resolve 'drive.google.com' ([Errno -3] Temporary failure in name resolution)"))]
+Traceback (most recent call last):
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/socket.py", line 930, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7f7fde1a10a0>: Failed to resolve 'drive.google.com' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f7fde1a10a0>: Failed to resolve 'drive.google.com' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "src/cnnClassifier/pipeline/stage_01_data_ingestion.py", line 25, in <module>
+    obj.main()
+  File "src/cnnClassifier/pipeline/stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "/home/meetpatel12_/Projects/6th Sem/Kidney Disease Classification Using MLflow and DVC/src/cnnClassifier/components/data_ingestion.py", line 33, in download_file
+    raise e
+  File "/home/meetpatel12_/Projects/6th Sem/Kidney Disease Classification Using MLflow and DVC/src/cnnClassifier/components/data_ingestion.py", line 28, in download_file
+    gdown.download(prefix+file_id,zip_download_dir)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/gdown/download.py", line 202, in download
+    res = sess.get(url, stream=True, verify=verify)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f7fde1a10a0>: Failed to resolve 'drive.google.com' ([Errno -3] Temporary failure in name resolution)"))
+[2025-11-25 08:45:10,964: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-11-25 08:45:10,966: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-25 08:45:10,967: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-25 08:45:10,968: INFO: common: created directory at: artifacts]
+[2025-11-25 08:45:10,968: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-11-25 08:45:10,968: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-25 08:45:10,972: ERROR: stage_01_data_ingestion: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7ff5f1622eb0>: Failed to resolve 'drive.google.com' ([Errno -3] Temporary failure in name resolution)"))]
+Traceback (most recent call last):
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/socket.py", line 930, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7ff5f1622eb0>: Failed to resolve 'drive.google.com' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7ff5f1622eb0>: Failed to resolve 'drive.google.com' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "src/cnnClassifier/pipeline/stage_01_data_ingestion.py", line 25, in <module>
+    obj.main()
+  File "src/cnnClassifier/pipeline/stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "/home/meetpatel12_/Projects/6th Sem/Kidney Disease Classification Using MLflow and DVC/src/cnnClassifier/components/data_ingestion.py", line 33, in download_file
+    raise e
+  File "/home/meetpatel12_/Projects/6th Sem/Kidney Disease Classification Using MLflow and DVC/src/cnnClassifier/components/data_ingestion.py", line 28, in download_file
+    gdown.download(prefix+file_id,zip_download_dir)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/gdown/download.py", line 202, in download
+    res = sess.get(url, stream=True, verify=verify)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7ff5f1622eb0>: Failed to resolve 'drive.google.com' ([Errno -3] Temporary failure in name resolution)"))
+[2025-11-25 08:51:31,903: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-11-25 08:51:31,905: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-25 08:51:31,907: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-25 08:51:31,907: INFO: common: created directory at: artifacts]
+[2025-11-25 08:51:31,907: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-11-25 08:51:31,907: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-25 08:53:08,406: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-25 08:53:09,005: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-11-25 08:53:13,481: INFO: stage_02_prepare_base_model: *******************]
+[2025-11-25 08:53:13,482: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model started <<<<<<]
+[2025-11-25 08:53:13,484: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-25 08:53:13,486: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-25 08:53:13,486: INFO: common: created directory at: artifacts]
+[2025-11-25 08:53:13,486: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-11-25 08:53:13,948: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-11-25 08:53:14,151: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-11-25 08:53:18,292: INFO: stage_03_model_training: *******************]
+[2025-11-25 08:53:18,292: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<]
+[2025-11-25 08:53:18,295: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-25 08:53:18,297: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-25 08:53:18,297: INFO: common: created directory at: artifacts]
+[2025-11-25 08:53:18,297: INFO: common: created directory at: artifacts/training]
+[2025-11-25 10:41:51,551: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-11-25 10:41:51,570: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-25 10:41:51,579: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-25 10:41:51,581: INFO: common: created directory at: artifacts]
+[2025-11-25 10:41:51,582: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-11-25 10:41:51,583: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-25 10:42:10,795: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-25 10:42:13,606: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-11-25 10:42:15,147: ERROR: stage_03_model_training: Graph execution error:
+
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (975).jpg'
+Traceback (most recent call last):
+
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/tensorflow/python/ops/script_ops.py", line 268, in __call__
+    ret = func(*args)
+
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/tensorflow/python/autograph/impl/api.py", line 643, in wrapper
+    return func(*args, **kwargs)
+
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/tensorflow/python/data/ops/from_generator_op.py", line 198, in generator_py_func
+    values = next(generator_state.get_iterator(iterator_id))
+
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/keras/src/engine/data_adapter.py", line 917, in wrapped_generator
+    for data in generator_fn():
+
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/keras/src/engine/data_adapter.py", line 1064, in generator_fn
+    yield x[i]
+
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/keras/src/preprocessing/image.py", line 116, in __getitem__
+    return self._get_batches_of_transformed_samples(index_array)
+
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/keras/src/preprocessing/image.py", line 370, in _get_batches_of_transformed_samples
+    img = image_utils.load_img(
+
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/keras/src/utils/image_utils.py", line 422, in load_img
+    with open(path, "rb") as f:
+
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (975).jpg'
+
+
+	 [[{{node PyFunc}}]]
+	 [[IteratorGetNext]] [Op:__inference_train_function_1086]]
+Traceback (most recent call last):
+  File "src/cnnClassifier/pipeline/stage_03_model_training.py", line 30, in <module>
+    obj.main()
+  File "src/cnnClassifier/pipeline/stage_03_model_training.py", line 21, in main
+    training.train()
+  File "/home/meetpatel12_/Projects/6th Sem/Kidney Disease Classification Using MLflow and DVC/src/cnnClassifier/components/model_training.py", line 76, in train
+    self.model.fit(
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/keras/src/utils/traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/tensorflow/python/eager/execute.py", line 53, in quick_execute
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,
+tensorflow.python.framework.errors_impl.UnknownError: Graph execution error:
+
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (975).jpg'
+Traceback (most recent call last):
+
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/tensorflow/python/ops/script_ops.py", line 268, in __call__
+    ret = func(*args)
+
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/tensorflow/python/autograph/impl/api.py", line 643, in wrapper
+    return func(*args, **kwargs)
+
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/tensorflow/python/data/ops/from_generator_op.py", line 198, in generator_py_func
+    values = next(generator_state.get_iterator(iterator_id))
+
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/keras/src/engine/data_adapter.py", line 917, in wrapped_generator
+    for data in generator_fn():
+
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/keras/src/engine/data_adapter.py", line 1064, in generator_fn
+    yield x[i]
+
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/keras/src/preprocessing/image.py", line 116, in __getitem__
+    return self._get_batches_of_transformed_samples(index_array)
+
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/keras/src/preprocessing/image.py", line 370, in _get_batches_of_transformed_samples
+    img = image_utils.load_img(
+
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/keras/src/utils/image_utils.py", line 422, in load_img
+    with open(path, "rb") as f:
+
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (975).jpg'
+
+
+	 [[{{node PyFunc}}]]
+	 [[IteratorGetNext]] [Op:__inference_train_function_1086]
+[2025-11-25 10:42:27,605: INFO: stage_02_prepare_base_model: *******************]
+[2025-11-25 10:42:27,606: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model started <<<<<<]
+[2025-11-25 10:42:27,618: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-25 10:42:27,625: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-25 10:42:27,627: INFO: common: created directory at: artifacts]
+[2025-11-25 10:42:27,627: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-11-25 10:42:29,087: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-11-25 10:42:29,687: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-11-25 10:42:41,749: INFO: stage_03_model_training: *******************]
+[2025-11-25 10:42:41,749: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<]
+[2025-11-25 10:42:41,758: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-25 10:42:41,764: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-25 10:42:41,765: INFO: common: created directory at: artifacts]
+[2025-11-25 10:42:41,765: INFO: common: created directory at: artifacts/training]
+[2025-11-25 10:53:15,052: INFO: stage_03_model_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-11-25 10:53:29,201: INFO: stage_04_model_evaluation: *******************]
+[2025-11-25 10:53:29,202: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-11-25 10:53:29,209: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-25 10:53:29,214: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-25 10:53:29,215: INFO: common: created directory at: artifacts]
+[2025-11-25 10:54:31,514: INFO: common: json file saved at: scores.json]
+[2025-11-25 10:54:31,515: INFO: common: json file saved at: scores.json]
+[2025-11-25 10:54:31,515: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-11-25 10:54:49,916: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.59.191.133:8080]
+[2025-11-25 10:54:49,916: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-11-25 10:54:55,064: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 10:54:55] "GET / HTTP/1.1" 200 -]
+[2025-11-25 10:54:55,642: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 10:54:55] "GET / HTTP/1.1" 200 -]
+[2025-11-25 10:55:09,981: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 10:55:09] "POST /predict HTTP/1.1" 200 -]
+[2025-11-25 10:55:27,092: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 10:55:27] "POST /predict HTTP/1.1" 200 -]
+[2025-11-25 10:59:18,375: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 10:59:18] "POST /predict HTTP/1.1" 200 -]
+[2025-11-25 10:59:54,254: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.59.191.133:8080]
+[2025-11-25 10:59:54,254: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-11-25 11:00:04,192: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:00:04] "GET / HTTP/1.1" 200 -]
+[2025-11-25 11:00:04,689: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:00:04] "GET / HTTP/1.1" 200 -]
+[2025-11-25 11:00:21,329: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:00:21] "POST /predict HTTP/1.1" 200 -]
+[2025-11-25 11:02:50,139: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.59.191.133:8080]
+[2025-11-25 11:02:50,139: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-11-25 11:02:56,239: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:02:56] "GET / HTTP/1.1" 200 -]
+[2025-11-25 11:02:56,778: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:02:56] "GET / HTTP/1.1" 200 -]
+[2025-11-25 11:03:09,002: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:03:09] "POST /predict HTTP/1.1" 200 -]
+[2025-11-25 11:03:25,706: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:03:25] "POST /predict HTTP/1.1" 200 -]
+[2025-11-25 11:03:35,819: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:03:35] "POST /predict HTTP/1.1" 200 -]
+[2025-11-25 11:03:47,513: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:03:47] "POST /predict HTTP/1.1" 200 -]
+[2025-11-25 11:07:18,421: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.59.191.133:8080]
+[2025-11-25 11:07:18,421: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-11-25 11:07:27,237: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:07:27] "GET / HTTP/1.1" 200 -]
+[2025-11-25 11:07:27,753: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:07:27] "GET / HTTP/1.1" 200 -]
+[2025-11-25 11:07:38,352: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:07:38] "POST /predict HTTP/1.1" 200 -]
+[2025-11-25 11:07:49,978: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:07:49] "POST /predict HTTP/1.1" 200 -]
+[2025-11-25 11:07:59,742: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:07:59] "POST /predict HTTP/1.1" 200 -]
+[2025-11-25 11:08:10,955: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:08:10] "POST /predict HTTP/1.1" 200 -]
+[2025-11-25 11:09:56,485: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.59.191.133:8080]
+[2025-11-25 11:09:56,486: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-11-25 11:10:02,020: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:10:02] "GET / HTTP/1.1" 200 -]
+[2025-11-25 11:10:02,541: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:10:02] "GET / HTTP/1.1" 200 -]
+[2025-11-25 11:10:34,016: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:10:34] "POST /predict HTTP/1.1" 200 -]
+[2025-11-25 11:10:46,271: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:10:46] "POST /predict HTTP/1.1" 200 -]
+[2025-11-25 11:12:47,930: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-11-25 11:12:47,938: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-25 11:12:47,944: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-25 11:12:47,945: INFO: common: created directory at: artifacts]
+[2025-11-25 11:12:47,945: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-11-25 11:12:47,945: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-25 11:13:17,930: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-25 11:13:19,628: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-11-25 11:13:32,720: INFO: stage_02_prepare_base_model: *******************]
+[2025-11-25 11:13:32,720: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model started <<<<<<]
+[2025-11-25 11:13:32,728: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-25 11:13:32,734: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-25 11:13:32,735: INFO: common: created directory at: artifacts]
+[2025-11-25 11:13:32,736: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-11-25 11:13:34,211: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-11-25 11:13:34,816: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-11-25 11:13:46,849: INFO: stage_03_model_training: *******************]
+[2025-11-25 11:13:46,850: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<]
+[2025-11-25 11:13:46,858: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-25 11:13:46,866: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-25 11:13:46,867: INFO: common: created directory at: artifacts]
+[2025-11-25 11:13:46,868: INFO: common: created directory at: artifacts/training]
+[2025-11-25 11:24:34,859: INFO: stage_03_model_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-11-25 11:24:49,084: INFO: stage_04_model_evaluation: *******************]
+[2025-11-25 11:24:49,084: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-11-25 11:24:49,092: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-25 11:24:49,097: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-25 11:24:49,098: INFO: common: created directory at: artifacts]
+[2025-11-25 11:25:51,582: INFO: common: json file saved at: scores.json]
+[2025-11-25 11:25:51,583: INFO: common: json file saved at: scores.json]
+[2025-11-25 11:25:51,583: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-11-25 11:26:38,009: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.59.191.133:8080]
+[2025-11-25 11:26:38,009: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-11-25 11:26:48,468: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:26:48] "GET / HTTP/1.1" 200 -]
+[2025-11-25 11:26:48,967: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:26:48] "GET / HTTP/1.1" 200 -]
+[2025-11-25 11:27:02,512: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:27:02] "POST /predict HTTP/1.1" 200 -]
+[2025-11-25 11:27:16,421: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:27:16] "POST /predict HTTP/1.1" 200 -]
+[2025-11-25 11:27:26,525: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:27:26] "POST /predict HTTP/1.1" 200 -]
+[2025-11-25 11:28:47,127: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:28:47] "POST /predict HTTP/1.1" 200 -]
+[2025-11-25 11:34:19,913: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.59.191.133:8080]
+[2025-11-25 11:34:19,914: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-11-25 11:34:25,379: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:34:25] "GET / HTTP/1.1" 200 -]
+[2025-11-25 11:34:25,870: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:34:25] "GET / HTTP/1.1" 200 -]
+[2025-11-25 11:34:34,574: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:34:34] "GET / HTTP/1.1" 200 -]
+[2025-11-25 11:34:35,062: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:34:35] "GET / HTTP/1.1" 200 -]
+[2025-11-25 11:34:42,843: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:34:42] "GET / HTTP/1.1" 200 -]
+[2025-11-25 11:34:43,343: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:34:43] "GET / HTTP/1.1" 200 -]
+[2025-11-25 11:34:51,339: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:34:51] "GET / HTTP/1.1" 200 -]
+[2025-11-25 11:34:51,828: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:34:51] "GET / HTTP/1.1" 200 -]
+[2025-11-25 11:35:12,867: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.59.191.133:8080]
+[2025-11-25 11:35:12,868: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-11-25 11:35:17,768: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:35:17] "GET / HTTP/1.1" 200 -]
+[2025-11-25 11:35:18,245: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:35:18] "GET / HTTP/1.1" 200 -]
+[2025-11-25 11:35:23,059: INFO: _internal: 10.59.191.133 - - [25/Nov/2025 11:35:23] "GET / HTTP/1.1" 200 -]
+[2025-11-25 11:35:24,689: INFO: _internal: 10.59.191.133 - - [25/Nov/2025 11:35:24] "GET / HTTP/1.1" 200 -]
+[2025-11-25 11:36:18,324: INFO: _internal: 10.59.191.133 - - [25/Nov/2025 11:36:18] "POST /predict HTTP/1.1" 200 -]
+[2025-11-25 11:36:30,690: INFO: _internal: 10.59.191.133 - - [25/Nov/2025 11:36:30] "POST /predict HTTP/1.1" 200 -]
+[2025-11-25 11:37:46,507: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.59.191.133:8080]
+[2025-11-25 11:37:46,508: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-11-25 11:37:51,931: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:37:51] "GET / HTTP/1.1" 200 -]
+[2025-11-25 11:37:52,517: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:37:52] "GET / HTTP/1.1" 200 -]
+[2025-11-25 11:38:04,963: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:38:04] "POST /predict HTTP/1.1" 200 -]
+[2025-11-25 11:42:13,640: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.59.191.133:8080]
+[2025-11-25 11:42:13,641: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-11-25 11:42:13,643: INFO: _internal:  * Restarting with stat]
+[2025-11-25 11:42:22,726: WARNING: _internal:  * Debugger is active!]
+[2025-11-25 11:42:22,779: INFO: _internal:  * Debugger PIN: 138-479-186]
+[2025-11-25 11:42:22,841: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:42:22] "GET / HTTP/1.1" 200 -]
+[2025-11-25 11:42:23,328: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:42:23] "GET / HTTP/1.1" 200 -]
+[2025-11-25 11:42:32,821: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:42:32] "POST /predict HTTP/1.1" 200 -]
+[2025-11-25 11:42:58,099: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:42:58] "POST /predict HTTP/1.1" 200 -]
+[2025-11-25 11:43:13,867: INFO: _internal:  * Detected change in '/home/meetpatel12_/Projects/6th Sem/Kidney Disease Classification Using MLflow and DVC/app.py', reloading]
+[2025-11-25 11:43:15,160: INFO: _internal:  * Restarting with stat]
+[2025-11-25 11:44:27,326: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.59.191.133:8080]
+[2025-11-25 11:44:27,327: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-11-25 11:44:33,897: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:44:33] "GET / HTTP/1.1" 200 -]
+[2025-11-25 11:44:34,419: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:44:34] "GET / HTTP/1.1" 200 -]
+[2025-11-25 11:44:46,718: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:44:46] "POST /predict HTTP/1.1" 200 -]
+[2025-11-25 11:45:39,245: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.59.191.133:8080]
+[2025-11-25 11:45:39,246: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-11-25 11:45:43,072: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:45:43] "GET / HTTP/1.1" 200 -]
+[2025-11-25 11:45:43,611: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:45:43] "GET / HTTP/1.1" 200 -]
+[2025-11-25 11:45:52,048: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:45:52] "POST /predict HTTP/1.1" 200 -]
+[2025-11-25 11:47:26,856: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.59.191.133:8080]
+[2025-11-25 11:47:26,856: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-11-25 11:47:30,722: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:47:30] "GET / HTTP/1.1" 200 -]
+[2025-11-25 11:47:31,304: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:47:31] "GET / HTTP/1.1" 200 -]
+[2025-11-25 11:47:39,271: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:47:39] "POST /predict HTTP/1.1" 200 -]
+[2025-11-25 11:48:18,958: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.59.191.133:8080]
+[2025-11-25 11:48:18,958: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-11-25 11:48:23,492: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:48:23] "GET / HTTP/1.1" 200 -]
+[2025-11-25 11:48:24,015: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:48:24] "GET / HTTP/1.1" 200 -]
+[2025-11-25 11:48:33,267: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:48:33] "POST /predict HTTP/1.1" 200 -]
+[2025-11-25 11:48:52,512: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:48:52] "POST /predict HTTP/1.1" 200 -]
+[2025-11-25 11:49:00,346: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:49:00] "POST /predict HTTP/1.1" 200 -]
+[2025-11-25 11:49:08,801: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:49:08] "POST /predict HTTP/1.1" 200 -]
+[2025-11-25 11:50:05,825: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.59.191.133:8080]
+[2025-11-25 11:50:05,825: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-11-25 11:50:08,729: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:50:08] "GET / HTTP/1.1" 200 -]
+[2025-11-25 11:50:09,240: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:50:09] "GET / HTTP/1.1" 200 -]
+[2025-11-25 11:50:24,817: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:50:24] "POST /predict HTTP/1.1" 200 -]
+[2025-11-25 11:50:43,605: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 11:50:43] "POST /predict HTTP/1.1" 200 -]
+[2025-11-25 11:52:04,485: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-11-25 11:52:04,493: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-25 11:52:04,499: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-25 11:52:04,500: INFO: common: created directory at: artifacts]
+[2025-11-25 11:52:04,500: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-11-25 11:52:04,501: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-25 11:52:17,304: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-25 11:52:19,176: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-11-25 11:52:32,208: INFO: stage_02_prepare_base_model: *******************]
+[2025-11-25 11:52:32,209: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model started <<<<<<]
+[2025-11-25 11:52:32,217: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-25 11:52:32,222: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-25 11:52:32,223: INFO: common: created directory at: artifacts]
+[2025-11-25 11:52:32,224: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-11-25 11:52:33,667: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-11-25 11:52:34,286: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-11-25 11:52:46,289: INFO: stage_03_model_training: *******************]
+[2025-11-25 11:52:46,289: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<]
+[2025-11-25 11:52:46,297: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-25 11:52:46,303: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-25 11:52:46,303: INFO: common: created directory at: artifacts]
+[2025-11-25 11:52:46,304: INFO: common: created directory at: artifacts/training]
+[2025-11-25 12:03:20,330: INFO: stage_03_model_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-11-25 12:03:34,355: INFO: stage_04_model_evaluation: *******************]
+[2025-11-25 12:03:34,356: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-11-25 12:03:34,363: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-25 12:03:34,369: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-25 12:03:34,370: INFO: common: created directory at: artifacts]
+[2025-11-25 12:04:37,039: INFO: common: json file saved at: scores.json]
+[2025-11-25 12:04:37,040: INFO: common: json file saved at: scores.json]
+[2025-11-25 12:04:37,041: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-11-25 12:05:02,875: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.59.191.133:8080]
+[2025-11-25 12:05:02,876: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-11-25 12:05:10,470: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 12:05:10] "GET / HTTP/1.1" 200 -]
+[2025-11-25 12:05:11,009: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 12:05:11] "GET / HTTP/1.1" 200 -]
+[2025-11-25 12:05:19,533: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 12:05:19] "POST /predict HTTP/1.1" 200 -]
+[2025-11-25 12:05:47,828: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 12:05:47] "POST /predict HTTP/1.1" 200 -]
+[2025-11-25 12:06:24,019: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.59.191.133:8080]
+[2025-11-25 12:06:24,020: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-11-25 12:06:27,811: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 12:06:27] "GET / HTTP/1.1" 200 -]
+[2025-11-25 12:06:28,481: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 12:06:28] "GET / HTTP/1.1" 200 -]
+[2025-11-25 12:06:39,331: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 12:06:39] "POST /predict HTTP/1.1" 200 -]
+[2025-11-25 19:48:39,314: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-11-25 19:48:39,317: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-25 19:48:39,319: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-25 19:48:39,319: INFO: common: created directory at: artifacts]
+[2025-11-25 19:48:39,319: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-11-25 19:48:39,319: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-25 19:48:39,324: ERROR: stage_01_data_ingestion: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f8dfe416e20>: Failed to resolve 'drive.google.com' ([Errno -3] Temporary failure in name resolution)"))]
+Traceback (most recent call last):
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/socket.py", line 930, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7f8dfe416e20>: Failed to resolve 'drive.google.com' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f8dfe416e20>: Failed to resolve 'drive.google.com' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "src/cnnClassifier/pipeline/stage_01_data_ingestion.py", line 25, in <module>
+    obj.main()
+  File "src/cnnClassifier/pipeline/stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "/home/meetpatel12_/Projects/6th Sem/Kidney Disease Classification Using MLflow and DVC/src/cnnClassifier/components/data_ingestion.py", line 34, in download_file
+    raise e
+  File "/home/meetpatel12_/Projects/6th Sem/Kidney Disease Classification Using MLflow and DVC/src/cnnClassifier/components/data_ingestion.py", line 29, in download_file
+    gdown.download(prefix+file_id,zip_download_dir)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/gdown/download.py", line 202, in download
+    res = sess.get(url, stream=True, verify=verify)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f8dfe416e20>: Failed to resolve 'drive.google.com' ([Errno -3] Temporary failure in name resolution)"))
+[2025-11-25 19:48:56,770: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-11-25 19:48:56,773: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-25 19:48:56,775: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-25 19:48:56,775: INFO: common: created directory at: artifacts]
+[2025-11-25 19:48:56,775: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-11-25 19:48:56,775: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-25 19:48:56,779: ERROR: stage_01_data_ingestion: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fe0289a02e0>: Failed to resolve 'drive.google.com' ([Errno -3] Temporary failure in name resolution)"))]
+Traceback (most recent call last):
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/socket.py", line 930, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7fe0289a02e0>: Failed to resolve 'drive.google.com' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fe0289a02e0>: Failed to resolve 'drive.google.com' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "src/cnnClassifier/pipeline/stage_01_data_ingestion.py", line 25, in <module>
+    obj.main()
+  File "src/cnnClassifier/pipeline/stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "/home/meetpatel12_/Projects/6th Sem/Kidney Disease Classification Using MLflow and DVC/src/cnnClassifier/components/data_ingestion.py", line 34, in download_file
+    raise e
+  File "/home/meetpatel12_/Projects/6th Sem/Kidney Disease Classification Using MLflow and DVC/src/cnnClassifier/components/data_ingestion.py", line 29, in download_file
+    gdown.download(prefix+file_id,zip_download_dir)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/gdown/download.py", line 202, in download
+    res = sess.get(url, stream=True, verify=verify)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fe0289a02e0>: Failed to resolve 'drive.google.com' ([Errno -3] Temporary failure in name resolution)"))
+[2025-11-25 19:49:04,600: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-11-25 19:49:04,603: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-25 19:49:04,605: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-25 19:49:04,605: INFO: common: created directory at: artifacts]
+[2025-11-25 19:49:04,605: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-11-25 19:49:04,605: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-25 19:49:04,610: ERROR: stage_01_data_ingestion: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f2ba75f0e20>: Failed to resolve 'drive.google.com' ([Errno -3] Temporary failure in name resolution)"))]
+Traceback (most recent call last):
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/socket.py", line 930, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7f2ba75f0e20>: Failed to resolve 'drive.google.com' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f2ba75f0e20>: Failed to resolve 'drive.google.com' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "src/cnnClassifier/pipeline/stage_01_data_ingestion.py", line 25, in <module>
+    obj.main()
+  File "src/cnnClassifier/pipeline/stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "/home/meetpatel12_/Projects/6th Sem/Kidney Disease Classification Using MLflow and DVC/src/cnnClassifier/components/data_ingestion.py", line 34, in download_file
+    raise e
+  File "/home/meetpatel12_/Projects/6th Sem/Kidney Disease Classification Using MLflow and DVC/src/cnnClassifier/components/data_ingestion.py", line 29, in download_file
+    gdown.download(prefix+file_id,zip_download_dir)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/gdown/download.py", line 202, in download
+    res = sess.get(url, stream=True, verify=verify)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f2ba75f0e20>: Failed to resolve 'drive.google.com' ([Errno -3] Temporary failure in name resolution)"))
+[2025-11-25 19:49:56,452: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-11-25 19:49:56,454: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-25 19:49:56,456: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-25 19:49:56,456: INFO: common: created directory at: artifacts]
+[2025-11-25 19:49:56,456: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-11-25 19:49:56,457: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-25 19:49:56,461: ERROR: stage_01_data_ingestion: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fa3565b1e80>: Failed to resolve 'drive.google.com' ([Errno -3] Temporary failure in name resolution)"))]
+Traceback (most recent call last):
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/socket.py", line 930, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7fa3565b1e80>: Failed to resolve 'drive.google.com' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fa3565b1e80>: Failed to resolve 'drive.google.com' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "src/cnnClassifier/pipeline/stage_01_data_ingestion.py", line 25, in <module>
+    obj.main()
+  File "src/cnnClassifier/pipeline/stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "/home/meetpatel12_/Projects/6th Sem/Kidney Disease Classification Using MLflow and DVC/src/cnnClassifier/components/data_ingestion.py", line 34, in download_file
+    raise e
+  File "/home/meetpatel12_/Projects/6th Sem/Kidney Disease Classification Using MLflow and DVC/src/cnnClassifier/components/data_ingestion.py", line 29, in download_file
+    gdown.download(prefix+file_id,zip_download_dir)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/gdown/download.py", line 202, in download
+    res = sess.get(url, stream=True, verify=verify)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fa3565b1e80>: Failed to resolve 'drive.google.com' ([Errno -3] Temporary failure in name resolution)"))
+[2025-11-25 19:50:25,640: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-11-25 19:50:25,642: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-25 19:50:25,644: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-25 19:50:25,644: INFO: common: created directory at: artifacts]
+[2025-11-25 19:50:25,644: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-11-25 19:50:25,644: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-25 19:50:25,649: ERROR: stage_01_data_ingestion: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fed7459f040>: Failed to resolve 'drive.google.com' ([Errno -3] Temporary failure in name resolution)"))]
+Traceback (most recent call last):
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/socket.py", line 930, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7fed7459f040>: Failed to resolve 'drive.google.com' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fed7459f040>: Failed to resolve 'drive.google.com' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "src/cnnClassifier/pipeline/stage_01_data_ingestion.py", line 25, in <module>
+    obj.main()
+  File "src/cnnClassifier/pipeline/stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "/home/meetpatel12_/Projects/6th Sem/Kidney Disease Classification Using MLflow and DVC/src/cnnClassifier/components/data_ingestion.py", line 34, in download_file
+    raise e
+  File "/home/meetpatel12_/Projects/6th Sem/Kidney Disease Classification Using MLflow and DVC/src/cnnClassifier/components/data_ingestion.py", line 29, in download_file
+    gdown.download(prefix+file_id,zip_download_dir)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/gdown/download.py", line 202, in download
+    res = sess.get(url, stream=True, verify=verify)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fed7459f040>: Failed to resolve 'drive.google.com' ([Errno -3] Temporary failure in name resolution)"))
+[2025-11-25 19:52:04,832: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-11-25 19:52:04,835: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-25 19:52:04,837: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-25 19:52:04,837: INFO: common: created directory at: artifacts]
+[2025-11-25 19:52:04,837: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-11-25 19:52:04,837: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-25 19:52:04,842: ERROR: stage_01_data_ingestion: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7ffa605ad190>: Failed to resolve 'drive.google.com' ([Errno -3] Temporary failure in name resolution)"))]
+Traceback (most recent call last):
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/socket.py", line 930, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7ffa605ad190>: Failed to resolve 'drive.google.com' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7ffa605ad190>: Failed to resolve 'drive.google.com' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "src/cnnClassifier/pipeline/stage_01_data_ingestion.py", line 25, in <module>
+    obj.main()
+  File "src/cnnClassifier/pipeline/stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "/home/meetpatel12_/Projects/6th Sem/Kidney Disease Classification Using MLflow and DVC/src/cnnClassifier/components/data_ingestion.py", line 34, in download_file
+    raise e
+  File "/home/meetpatel12_/Projects/6th Sem/Kidney Disease Classification Using MLflow and DVC/src/cnnClassifier/components/data_ingestion.py", line 29, in download_file
+    gdown.download(prefix+file_id,zip_download_dir)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/gdown/download.py", line 202, in download
+    res = sess.get(url, stream=True, verify=verify)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7ffa605ad190>: Failed to resolve 'drive.google.com' ([Errno -3] Temporary failure in name resolution)"))
+[2025-11-25 19:55:40,809: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://127.0.0.1:8080]
+[2025-11-25 19:55:40,809: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-11-25 19:55:49,024: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 19:55:49] "GET / HTTP/1.1" 200 -]
+[2025-11-25 19:55:49,388: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 19:55:49] "GET / HTTP/1.1" 200 -]
+[2025-11-25 14:27:28,667: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 14:27:28] "POST /predict HTTP/1.1" 200 -]
+[2025-11-25 14:27:52,817: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-11-25 14:27:52,820: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-25 14:27:52,821: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-25 14:27:52,822: INFO: common: created directory at: artifacts]
+[2025-11-25 14:27:52,822: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-11-25 14:27:52,822: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-25 14:35:47,684: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-25 14:35:48,278: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-11-25 14:35:52,501: INFO: stage_02_prepare_base_model: *******************]
+[2025-11-25 14:35:52,501: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model started <<<<<<]
+[2025-11-25 14:35:52,503: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-25 14:35:52,505: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-25 14:35:52,505: INFO: common: created directory at: artifacts]
+[2025-11-25 14:35:52,505: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-11-25 14:35:52,999: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-11-25 14:35:53,191: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-11-25 14:35:57,380: INFO: stage_03_model_training: *******************]
+[2025-11-25 14:35:57,380: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<]
+[2025-11-25 14:35:57,384: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-25 14:35:57,386: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-25 14:35:57,387: INFO: common: created directory at: artifacts]
+[2025-11-25 14:35:57,387: INFO: common: created directory at: artifacts/training]
+[2025-11-25 14:39:56,267: INFO: stage_03_model_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-11-25 14:40:01,188: INFO: stage_04_model_evaluation: *******************]
+[2025-11-25 14:40:01,188: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-11-25 14:40:01,190: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-25 14:40:01,192: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-25 14:40:01,193: INFO: common: created directory at: artifacts]
+[2025-11-25 14:40:25,574: INFO: common: json file saved at: scores.json]
+[2025-11-25 14:40:25,574: INFO: common: json file saved at: scores.json]
+[2025-11-25 14:40:25,574: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-11-25 14:41:30,759: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.59.191.133:8080]
+[2025-11-25 14:41:30,759: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-11-25 14:43:42,951: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 14:43:42] "GET / HTTP/1.1" 200 -]
+[2025-11-25 14:43:43,295: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 14:43:43] "GET / HTTP/1.1" 200 -]
+[2025-11-25 14:45:08,450: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 14:45:08] "GET / HTTP/1.1" 200 -]
+[2025-11-25 14:45:08,748: INFO: _internal: 127.0.0.1 - - [25/Nov/2025 14:45:08] "GET / HTTP/1.1" 200 -]
+[2025-11-27 00:27:51,459: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-11-27 00:27:51,468: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-27 00:27:51,469: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-27 00:27:51,470: INFO: common: created directory at: artifacts]
+[2025-11-27 00:27:51,470: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-11-27 00:27:51,470: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-27 00:28:00,601: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-27 00:28:00,925: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-11-27 00:28:03,808: INFO: stage_02_prepare_base_model: *******************]
+[2025-11-27 00:28:03,808: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model started <<<<<<]
+[2025-11-27 00:28:03,811: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-27 00:28:03,812: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-27 00:28:03,812: INFO: common: created directory at: artifacts]
+[2025-11-27 00:28:03,813: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-11-27 00:28:04,119: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-11-27 00:28:04,256: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-11-27 00:28:07,079: INFO: stage_03_model_training: *******************]
+[2025-11-27 00:28:07,079: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<]
+[2025-11-27 00:28:07,081: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-27 00:28:07,082: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-27 00:28:07,082: INFO: common: created directory at: artifacts]
+[2025-11-27 00:28:07,082: INFO: common: created directory at: artifacts/training]
+[2025-11-27 00:32:14,285: INFO: stage_03_model_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-11-27 00:32:18,082: INFO: stage_04_model_evaluation: *******************]
+[2025-11-27 00:32:18,082: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-11-27 00:32:18,084: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-27 00:32:18,085: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-27 00:32:18,085: INFO: common: created directory at: artifacts]
+[2025-11-27 00:32:43,404: INFO: common: json file saved at: scores.json]
+[2025-11-27 00:32:43,404: INFO: common: json file saved at: scores.json]
+[2025-11-27 00:32:43,405: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-11-27 00:33:02,407: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.107:8080]
+[2025-11-27 00:33:02,407: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-11-27 00:33:06,547: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 00:33:06] "GET / HTTP/1.1" 200 -]
+[2025-11-27 00:33:06,774: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 00:33:06] "GET / HTTP/1.1" 200 -]
+[2025-11-27 00:33:33,728: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 00:33:33] "POST /predict HTTP/1.1" 200 -]
+[2025-11-27 00:33:45,371: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 00:33:45] "POST /predict HTTP/1.1" 200 -]
+[2025-11-27 00:34:30,791: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.107:8080]
+[2025-11-27 00:34:30,791: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-11-27 00:34:33,489: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 00:34:33] "GET / HTTP/1.1" 200 -]
+[2025-11-27 00:34:33,695: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 00:34:33] "GET / HTTP/1.1" 200 -]
+[2025-11-27 00:34:43,324: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 00:34:43] "POST /predict HTTP/1.1" 200 -]
+[2025-11-27 00:34:53,962: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 00:34:53] "POST /predict HTTP/1.1" 200 -]
+[2025-11-27 00:36:28,308: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.107:8080]
+[2025-11-27 00:36:28,308: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-11-27 00:36:31,200: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 00:36:31] "GET / HTTP/1.1" 200 -]
+[2025-11-27 00:36:31,412: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 00:36:31] "GET / HTTP/1.1" 200 -]
+[2025-11-27 00:36:38,472: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 00:36:38] "POST /predict HTTP/1.1" 200 -]
+[2025-11-27 00:36:46,599: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 00:36:46] "POST /predict HTTP/1.1" 200 -]
+[2025-11-27 00:37:24,683: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.107:8080]
+[2025-11-27 00:37:24,683: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-11-27 00:37:26,801: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 00:37:26] "GET / HTTP/1.1" 200 -]
+[2025-11-27 00:37:27,005: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 00:37:27] "GET / HTTP/1.1" 200 -]
+[2025-11-27 00:37:37,638: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 00:37:37] "POST /predict HTTP/1.1" 200 -]
+[2025-11-27 00:38:31,795: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.107:8080]
+[2025-11-27 00:38:31,795: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-11-27 00:38:33,716: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 00:38:33] "GET / HTTP/1.1" 200 -]
+[2025-11-27 00:38:33,923: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 00:38:33] "GET / HTTP/1.1" 200 -]
+[2025-11-27 00:38:41,354: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/flask_cors/decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 45, in predictRoute
+    result = clApp.classifier.predict()
+  File "/home/meetpatel12_/Projects/6th Sem/Kidney Disease Classification Using MLflow and DVC/src/cnnClassifier/pipeline/prediction.py", line 13, in predict
+    config = read_yaml(os.path.join("artifacts", "training", "config.yaml"))
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/ensure/main.py", line 845, in __call__
+    raise EnsureError(msg.format(
+ensure.main.EnsureError: Argument path_to_yaml of type <class 'str'> to <function read_yaml at 0x7f453cf3a820> does not match annotation type <class 'pathlib.Path'>
+[2025-11-27 00:38:41,359: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 00:38:41] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-11-27 00:39:10,713: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 00:39:10] "GET / HTTP/1.1" 200 -]
+[2025-11-27 00:39:10,894: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 00:39:10] "GET / HTTP/1.1" 200 -]
+[2025-11-27 00:39:14,936: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/flask_cors/decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 45, in predictRoute
+    result = clApp.classifier.predict()
+  File "/home/meetpatel12_/Projects/6th Sem/Kidney Disease Classification Using MLflow and DVC/src/cnnClassifier/pipeline/prediction.py", line 13, in predict
+    config = read_yaml(os.path.join("artifacts", "training", "config.yaml"))
+  File "/home/meetpatel12_/miniconda3/envs/cnncls/lib/python3.8/site-packages/ensure/main.py", line 845, in __call__
+    raise EnsureError(msg.format(
+ensure.main.EnsureError: Argument path_to_yaml of type <class 'str'> to <function read_yaml at 0x7f453cf3a820> does not match annotation type <class 'pathlib.Path'>
+[2025-11-27 00:39:14,938: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 00:39:14] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-11-27 00:39:18,920: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 00:39:18] "GET / HTTP/1.1" 200 -]
+[2025-11-27 00:39:19,086: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 00:39:19] "GET / HTTP/1.1" 200 -]
+[2025-11-27 00:39:42,265: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.107:8080]
+[2025-11-27 00:39:42,265: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-11-27 00:39:44,047: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 00:39:44] "GET / HTTP/1.1" 200 -]
+[2025-11-27 00:39:44,255: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 00:39:44] "GET / HTTP/1.1" 200 -]
+[2025-11-27 00:39:51,813: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 00:39:51] "POST /predict HTTP/1.1" 200 -]
+[2025-11-27 00:40:07,332: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 00:40:07] "POST /predict HTTP/1.1" 200 -]
+[2025-11-27 00:41:30,374: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.107:8080]
+[2025-11-27 00:41:30,374: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-11-27 00:41:32,225: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 00:41:32] "GET / HTTP/1.1" 200 -]
+[2025-11-27 00:41:32,437: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 00:41:32] "GET / HTTP/1.1" 200 -]
+[2025-11-27 00:41:39,036: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 00:41:39] "POST /predict HTTP/1.1" 200 -]
+[2025-11-27 00:42:11,576: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.107:8080]
+[2025-11-27 00:42:11,576: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-11-27 00:42:13,179: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 00:42:13] "GET / HTTP/1.1" 200 -]
+[2025-11-27 00:42:13,389: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 00:42:13] "GET / HTTP/1.1" 200 -]
+[2025-11-27 00:42:19,058: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 00:42:19] "POST /predict HTTP/1.1" 200 -]
+[2025-11-27 00:45:05,115: INFO: stage_02_prepare_base_model: *******************]
+[2025-11-27 00:45:05,115: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model started <<<<<<]
+[2025-11-27 00:45:05,117: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-27 00:45:05,118: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-27 00:45:05,118: INFO: common: created directory at: artifacts]
+[2025-11-27 00:45:05,118: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-11-27 00:45:05,423: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-11-27 00:45:05,562: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-11-27 00:45:08,491: INFO: stage_03_model_training: *******************]
+[2025-11-27 00:45:08,491: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<]
+[2025-11-27 00:45:08,493: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-27 00:45:08,494: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-27 00:45:08,494: INFO: common: created directory at: artifacts]
+[2025-11-27 00:45:08,494: INFO: common: created directory at: artifacts/training]
+[2025-11-27 01:21:24,935: INFO: stage_03_model_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-11-27 01:21:29,053: INFO: stage_04_model_evaluation: *******************]
+[2025-11-27 01:21:29,053: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-11-27 01:21:29,055: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-11-27 01:21:29,056: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-27 01:21:29,057: INFO: common: created directory at: artifacts]
+[2025-11-27 01:21:57,546: INFO: common: json file saved at: scores.json]
+[2025-11-27 01:21:57,546: INFO: common: json file saved at: scores.json]
+[2025-11-27 01:21:57,546: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-11-27 01:22:08,328: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.107:8080]
+[2025-11-27 01:22:08,329: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-11-27 01:22:11,031: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 01:22:11] "GET / HTTP/1.1" 200 -]
+[2025-11-27 01:22:11,262: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 01:22:11] "GET / HTTP/1.1" 200 -]
+[2025-11-27 01:22:24,571: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 01:22:24] "POST /predict HTTP/1.1" 200 -]
+[2025-11-27 01:22:59,117: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 01:22:59] "POST /predict HTTP/1.1" 200 -]
+[2025-11-27 01:23:40,150: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 01:23:40] "POST /predict HTTP/1.1" 200 -]
+[2025-11-27 01:24:09,062: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 01:24:09] "POST /predict HTTP/1.1" 200 -]
+[2025-11-27 01:24:16,226: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x7efd39f8d9d0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2025-11-27 01:24:16,228: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 01:24:16] "POST /predict HTTP/1.1" 200 -]
+[2025-11-27 01:25:06,780: WARNING: polymorphic_function: 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x7efd39f8d790> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2025-11-27 01:25:06,781: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 01:25:06] "POST /predict HTTP/1.1" 200 -]
+[2025-11-27 01:25:13,183: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 01:25:13] "POST /predict HTTP/1.1" 200 -]
+[2025-11-27 01:25:40,915: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 01:25:40] "POST /predict HTTP/1.1" 200 -]
+[2025-11-27 01:25:45,891: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 01:25:45] "POST /predict HTTP/1.1" 200 -]
+[2025-11-27 01:26:18,394: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 01:26:18] "POST /predict HTTP/1.1" 200 -]
+[2025-11-27 01:26:26,959: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 01:26:26] "POST /predict HTTP/1.1" 200 -]
+[2025-11-27 01:27:10,006: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 01:27:10] "POST /predict HTTP/1.1" 200 -]
+[2025-11-27 01:27:17,243: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 01:27:17] "POST /predict HTTP/1.1" 200 -]
+[2025-11-27 01:27:39,545: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 01:27:39] "POST /predict HTTP/1.1" 200 -]
+[2025-11-27 01:27:45,535: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 01:27:45] "POST /predict HTTP/1.1" 200 -]
+[2025-11-27 01:27:50,202: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 01:27:50] "POST /predict HTTP/1.1" 200 -]
+[2025-11-27 01:27:56,537: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 01:27:56] "POST /predict HTTP/1.1" 200 -]
+[2025-11-27 01:28:05,671: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 01:28:05] "POST /predict HTTP/1.1" 200 -]
+[2025-11-27 01:28:12,515: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 01:28:12] "POST /predict HTTP/1.1" 200 -]
+[2025-11-27 01:28:33,384: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 01:28:33] "POST /predict HTTP/1.1" 200 -]
+[2025-11-27 01:29:12,257: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 01:29:12] "POST /predict HTTP/1.1" 200 -]
+[2025-11-27 01:29:28,045: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 01:29:28] "POST /predict HTTP/1.1" 200 -]
+[2025-11-27 01:29:35,942: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 01:29:35] "POST /predict HTTP/1.1" 200 -]
+[2025-11-27 01:29:40,925: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 01:29:40] "POST /predict HTTP/1.1" 200 -]
+[2025-11-27 01:35:10,863: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 01:35:10] "POST /predict HTTP/1.1" 200 -]
+[2025-11-27 01:35:16,841: INFO: _internal: 127.0.0.1 - - [27/Nov/2025 01:35:16] "POST /predict HTTP/1.1" 200 -]
