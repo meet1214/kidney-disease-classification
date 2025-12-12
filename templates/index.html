@@ -38,6 +38,7 @@
 		   -moz-box-shadow: none;
 		   -moz-transition: none;
 		   -webkit-transition: none;
+		   transition: none;
 		}
 		textarea:focus,
 		select:focus,
@@ -55,6 +56,7 @@
 		   -moz-box-shadow: none;
 		   -moz-transition: none;
 		   -webkit-transition: none;
+		   transition: none;
 		}
 		#loading {
 			position: fixed;
@@ -94,7 +96,7 @@
 <body>
     <div class="main container">
 		<section class="iupload">
-			<h3 class="text-center py-4">Object Classification</h3>
+			<h3 class="text-center py-4">Kidney Disease Classification</h3>
 			<div class="row">
 				<div class="img-part col-md-6">
 					<div class="image-part">
@@ -126,17 +128,19 @@
 				</div>
 				<div class="col-md-6 col-xs-12 right-part">
 					<h5 class="mb-2"><center>Prediction Results</center></h5>
-					<div class="row">
-						<div class="res-part2 col-md-5 col-xs-12"></div>
-						<div class="res-part col-md-5 col-xs-12"><div class="jsonRes"></div></div>
+					<div class="row justify-content-center">
+						<div class="col-md-11 col-xs-12">
+							<div class="card mt-2">
+								<div class="card-body">
+									<div class="res-part w-100"><div class="jsonRes"></div></div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 	</div>
-
-	<img class="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIkAAAAlCAMAAABBJDpuAAAAVFBMVEX/fgD/iQA7NzIyMjMnNYInNYEnNYInNYEzMzInNYQnNYETJzsnNYIwN1wxMjNoTis4O1YrNm0xOF47PE9DP0dEQEVpTVkAJJ4nNYEOLJHJbiAzMzOmmmHRAAAAFnRSTlOh/vu+986oen9fP2UqEzQkFAIDAAEEILVBJQAAA3FJREFUWMPNmO2WoyAMQG0VBARtdVRs3/89NwkgaF1rd2aOm18tIrnkgwSz7n+R7LcV1ELkeS7E7VySRlyfQXJhTiO55c+liP4cEuH1X8E7gaV+S3Jv2zYZ/Vr+/Sdx2vP6doc/fSPcf/GOpLSFVXFUW8t+giRP47TOd60yk1hbxIhSP0ACKPWrvw7YBIT/lcQY84G3Wk17ugWQfg5UsQJpjflKSLQi7xTWyk0SXTJ4VnB5D1yccxmp4Z+mX5KGNS+SPXVNll0ulyxL0wYmloBB6zL/MpCoAgjAJiUM6w0SboMwPUdRogvNKcNM3smFdRvEcJJkKcflQa+X0pNIfBGW0zKqjyQtw4VLKQlI7ZLgdrRNSZDjMQx2GB4pCkxkCrfGWUTJ0Egan6muCHgJCUwtnCk0mrJ9Q8K5LUqtdSfynkAedhynaRqngVDaXLiJEAzkFkM71IuIlWRYtSQpbXSZDvQ7JPCei9brs+oaABkn74LRIkpFaVxGnzjvIxTYREOoEwn5r01JTDRTcO87Eu3zNUeTPKZpjrIRrNIDCjzALbPk7LJMIokOEQu2K7yKQAKvFDF9pVe0R+LGb7h1MMkw2ijjA/1zhSfSphvEAChXJEhAqwYStIJWXnTpvbdH4hTUwSQ2JRmQpILDLYbB7J41SYiLcNozu5Z3JMo7RxBJahI7WSRByCMkqJt9hySESbVJcvmARJGFExJmdBSl2oM2+T4JLWfgaGFptizlPUm1FydHSdyZ7UnS4ySph2kS0kJrkvr5NJg7dnrJnfxgxPozRPGtkyPNOxtaiDvbIAF9L+5B5zTI2BwlwXmM+U3zReav3o0F8oUEFFZ42McDZYomOUziFmezgWyo251Uc1nyKJol7URCEvIYUEbHYaEGQi9C9egwCdVfHwiaajfjKMUcHcRacCylhWJbJDfq47EEDhYqoIWjHnwDXZPpPiChPQelLU+Cbm4w50FmYgkvFwpiWwCC/Um/SLcNElOC9RVj6qWpCiEMvRUK4zLpdKmPw8rVldy/qxjn60wLrVLWJIPLiZJRr3fsvnOHPvare+lB93tb37T20D82jqOt+zNuXhuNvNhp7X+PpHb3rvV9R5xjE2SpyCN9ffQO+GtWIZr5Xnytz4gTMIRYfys47/uJEXny/aQ/95tSUwmU+uRvSp/IHzQqZYpYrQmxAAAAAElFTkSuQmCC" />
-
 
 <div id="loading"><div class="loader"></div></div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -165,30 +169,84 @@ function sendRequest(base64Data){
 		else{
 			var url = $("#url").val();
 			$("#loading").show();
-			$.ajax({
-				url : url,
-				type: "post",
-				cache: false,
-				async: true,
-				crossDomain: true,
-				headers: {
-					'Content-Type': 'application/json',
-					'Access-Control-Allow-Origin':'*'
-				},
-				data:JSON.stringify({image:base64Data}),
-				success: function(res){
-					$(".res-part").html("");
-					$(".res-part2").html("");
-					try{
-						var imageData = res[1].image;
-						if(imageData.length > 100){
-							if(imageData.length > 10){$(".res-part2").append("<img class='resp-img' src='data:image/jpeg;base64," + imageData + "' alt='' />");}
+				$.ajax({
+					url : url,
+					type: "post",
+					cache: false,
+					async: true,
+					crossDomain: true,
+					headers: {
+						'Content-Type': 'application/json',
+						'Access-Control-Allow-Origin':'*'
+					},
+					data:JSON.stringify({image:base64Data}),
+					success: function(res){
+						$(".res-part").html("");
+						$(".res-part2").html("");
+						try{
+							var imageData = res[1].image;
+							if(imageData && imageData.length > 10){
+								$(".res-part2").append("<img class='resp-img' src='data:image/jpeg;base64," + imageData + "' alt='' />");
+							}
+						}catch(e){}
+
+						var info = res[0] || {};
+						var label = info.label || "-";
+						var tumorProb = (typeof info.tumor_probability === 'number') ? info.tumor_probability : null;
+						var tumorPct = "-";
+						if (tumorProb !== null) {
+							// Convert backend probability (0-1) to percentage string
+							tumorPct = (tumorProb * 100).toFixed(2) + '%';
+						} else if (info.details && info.details.tumor_percent) {
+							tumorPct = info.details.tumor_percent;
 						}
-					}catch(e){}
-					$(".res-part").html("<pre>" + JSON.stringify(res[0], undefined, 2) + "</pre>");
-					$("#loading").hide();
-				}
-			});
+
+						// Choose colors and descriptive text based on prediction label
+						var isTumor = (label && label.toLowerCase().indexOf('tumor') !== -1);
+						var summaryText;
+						if (isTumor) {
+							summaryText = "The model finds patterns that are more consistent with a kidney tumor.";
+						} else {
+							summaryText = "The model considers this scan more consistent with a normal kidney.";
+						}
+
+						// Qualitative risk level from tumor probability
+						var riskLevel = "unknown";
+						if (tumorProb !== null) {
+							if (tumorProb < 0.20) {
+								riskLevel = "low";
+							} else if (tumorProb < 0.50) {
+								riskLevel = "moderate";
+							} else {
+								riskLevel = "high";
+							}
+						}
+
+						var cardBorderClass = isTumor ? 'border-danger' : 'border-success';
+						var headerBgClass = isTumor ? 'bg-danger' : 'bg-success';
+						var headerText = isTumor ? 'Tumor Detected' : 'No Tumor Detected';
+						var doctorNote = "";
+						if (isTumor) {
+							doctorNote = '<p class="text-danger text-center mt-3 mb-0" style="font-size: 0.85rem;"><strong>Note:</strong> We recommend consulting a qualified doctor to review these results and guide next steps.</p>';
+						}
+
+						var html = "" +
+							'<div class="card ' + cardBorderClass + ' mb-2">' +
+							  '<div class="card-header ' + headerBgClass + ' text-white text-center">' + headerText + '</div>' +
+							  '<div class="card-body">' +
+							    '<h5 class="card-title text-center mb-1">Prediction: ' + label + '</h5>' +
+							    '<p class="text-muted text-center mb-2" style="font-size: 0.9rem;">' + summaryText + '</p>' +
+							    '<p class="text-muted text-center mb-3" style="font-size: 0.85rem;">Estimated overall tumor risk level: <strong>' + riskLevel + '</strong>.</p>' +
+							    '<p class="card-text mb-1"><strong>Estimated tumor risk:</strong></p>' +
+							    '<p class="display-6 text-center mb-0" style="font-size: 1.5rem;">' + tumorPct + '</p>' +
+							    doctorNote +
+							  '</div>' +
+							'</div>';
+
+						$(".res-part").html(html);
+						$("#loading").hide();
+					}
+				});
 		}
 	}
 }
@@ -203,7 +261,8 @@ $(document).ready(function(){
     $('#uload').click(function(evt) {
         $('#fileinput').focus().trigger('click');
     });
-	$("#fileinput").change(function(){
+
+    $("#fileinput").change(function(){
 		if (this.files && this.files[0]){
 			var reader = new FileReader();
 			reader.onload = function (e){
