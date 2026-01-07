@@ -18,18 +18,18 @@ class PredictionPipeline:
         # Model prediction
         preds = model.predict(img_array)
 
-        # Expose probabilities for debugging / UI
+        
         normal_prob = float(preds[0][0])
         tumor_prob = float(preds[0][1])
 
-        # Decision rule: classify as Tumor if tumor_prob crosses threshold
-        tumor_threshold = 0.4  # you can tune this based on validation data
+
+        tumor_threshold = 0.3 
         if tumor_prob >= tumor_threshold:
             predicted_label = "Tumor"
         else:
             predicted_label = "Normal"
 
-        # User-facing, concise response
+
         response = {
             "label": predicted_label,
             "normal_probability": normal_prob,
